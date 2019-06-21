@@ -1,5 +1,7 @@
 .smurf-container {
 	display: flex;
 	justify-content: space-around;
-	border: solid red 1px;
+	align-items: baseline;
+	width: 60%;
+	margin: 0 auto;
 }

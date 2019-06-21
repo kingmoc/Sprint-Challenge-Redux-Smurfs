@@ -17,7 +17,7 @@ export const getSmurfs = () => dispatch => {
   })
   .catch(err => {
     console.log(err.response)
-    // dispatch({ type: FETCH_DATA_FAIL, payload: `${err.response.status}`})
+    dispatch({ type: FETCH_DATA_FAIL, payload: err.response.status})
   })
 }
 
@@ -36,7 +36,7 @@ export const addSmurfAPI = (newSmurf) => dispatch => {
   })
   .catch(err => {
     console.log(err.response)
-    // dispatch({ type: FETCH_DATA_FAIL, payload: `${err.response.status}`})
+    dispatch({ type: FETCH_DATA_FAIL, payload: err.response.status})
   })
 
 }

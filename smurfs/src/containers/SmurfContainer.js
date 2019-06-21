@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "../styles/SmurfContainer.scss"
+import "../styles/SmurfContainer.css"
 
 import { connect } from "react-redux";
 import { getSmurfs } from "../actions"

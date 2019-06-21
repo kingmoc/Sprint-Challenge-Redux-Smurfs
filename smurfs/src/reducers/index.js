@@ -56,6 +56,13 @@ export default (state = initialState, action) => {
 				error: '',
 				addingSmurf: false
 			}
+
+		case ADD_DATA_FAIL:
+			return {
+				...state,
+				addingSmurf: false,
+				error: action.payload
+			}
       
     	default:
 			return state;

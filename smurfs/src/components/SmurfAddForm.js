@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
 import { addSmurfAPI } from '../actions';
+import "../styles/SmurfAddForm.css"
 
 class SmurfAddForm extends Component {
 
 	state = {
 		newSmurf: {
 			name: "",
-			age: null,
+			age: undefined,
 			height: ""
 		}
 	}
@@ -28,7 +29,7 @@ class SmurfAddForm extends Component {
 		this.setState({
 			newSmurf: {
 				name: "",
-				age: null,
+				age: "",
 				height: ""
 			}		
 		});		

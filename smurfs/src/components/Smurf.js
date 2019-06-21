@@ -1,4 +1,5 @@
 import React from 'react';
+import "../styles/Smurf.css"
 
 const Smurf = (props) => {
 	console.log(props.smurf)

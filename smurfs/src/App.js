@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import "../styles/App.scss";
+import "./styles/App.css";
 
-import SmurfContainer from '../containers/SmurfContainer'
+import SmurfContainer from './containers/SmurfContainer'
 
 
 
