@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "../styles/SmurfContainer.scss"
 
 import { connect } from "react-redux";
 import { getSmurfs } from "../actions"
@@ -21,9 +22,9 @@ class SmurfContainer extends Component {
 		console.log(this.props.smurfs)
 
 		return (
-			<div className="container">
+			<div className="smurf-container">
 
-				{/* <SmurfAddForm /> */}
+				<SmurfAddForm />
 				<SmurfList smurfs={this.props.smurfs}/>
 				
 			</div>
