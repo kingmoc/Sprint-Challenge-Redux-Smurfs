@@ -23,9 +23,8 @@ class SmurfContainer extends Component {
 		return (
 			<div className="container">
 
-				{/* <SmurfAddForm />
-				<SmurfList /> */}
-				<h1> test </h1>
+				{/* <SmurfAddForm /> */}
+				<SmurfList smurfs={this.props.smurfs}/>
 				
 			</div>
 		);
@@ -34,7 +33,7 @@ class SmurfContainer extends Component {
 
 
 const mapStateToProps = (state) => {
-	console.log(state.smurfs)
+	// console.log(state.smurfs)
 	return {
 		smurfs: state.smurfs,
 		fetchingSmurfs: state.fetchingSmurfs,
